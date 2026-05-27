@@ -22,7 +22,7 @@ jobs:
       - name: Construir y subir imagen a Docker Hub
         uses: docker/build-push-action@v4
         with:
-          context: .
+          context: ./Springboot-API-REST
+          file: ./Springboot-API-REST/Dockerfile
           push: true
-          # ¡Ojo aquí! Cambia el nombre de la imagen
           tags: marcelo1993/back-ventas:latest
